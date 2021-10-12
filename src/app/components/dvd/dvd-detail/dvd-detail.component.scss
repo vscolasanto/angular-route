@@ -1,0 +1,17 @@
+.dvd-container {
+  position: relative;
+  padding: 1rem 5rem;
+
+  .loading {
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+  }
+}

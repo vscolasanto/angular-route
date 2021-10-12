@@ -1,0 +1,16 @@
+<div class="book-container">
+  <mat-nav-list>
+    <h2 mat-subheader>Book List</h2>
+
+    <a *ngFor="let book of books$ | async; let i = index"
+      mat-list-item
+      [routerLink]="'/books/' + i"
+    >
+      <mat-icon mat-list-icon>library_books</mat-icon>
+      <h4 mat-line>{{book.title}}</h4>
+      <h5 mat-line>Pages: {{book.pages}}</h5>
+    </a>
+  </mat-nav-list>
+
+  <router-outlet></router-outlet>
+</div>

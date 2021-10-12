@@ -1,0 +1,16 @@
+.new-dvd-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+
+  .dvd-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dvd-action {
+    display: flex;
+    justify-content: space-between;
+  }
+}

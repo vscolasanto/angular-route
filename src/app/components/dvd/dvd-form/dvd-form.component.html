@@ -1,0 +1,21 @@
+<div class="new-dvd-container">
+  <form [formGroup]="formDvd" (ngSubmit)="onSubmit()" class="dvd-form">
+
+    <mat-form-field>
+      <input matInput placeholder="Title" formControlName="title" autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Year" type="number" formControlName="year" autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Genre" formControlName="category" autocomplete="off">
+    </mat-form-field>
+
+    <div class="dvd-action">
+      <button mat-raised-button color="warn" type="button" (click)="goBack()">Back</button>
+      <button mat-raised-button color="primary" type="submit">Save</button>
+    </div>
+  </form>
+</div>
